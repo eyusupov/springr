@@ -2,6 +2,7 @@
 <s:url var = "action" value='/add'/>
 <t:layout>
     <jsp:attribute name="body">
+    <sec:authorize access="isAuthenticated()">
     <form:form method="post" modelAttribute="entry" action="${action}" cssClass="add-entry">
       <dl>
         <dt>Title:
@@ -11,6 +12,7 @@
         <dd><input type="submit" value="Share">
       </dl>
     </form:form>
+    </sec:authorize>
     <ul class="entries">
     <c:choose>
       <c:when test="${empty entries}">
