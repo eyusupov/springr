@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package net.eyusupov.springr;
+package net.eyusupov.springr.web;
 
 import java.util.Map;
 import javax.validation.Valid;

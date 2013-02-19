@@ -34,6 +34,5 @@ public class EntryManagerDAO implements EntryManager {
     @Transactional
     public void addEntry(Entry entry) {
         em.persist(entry);
-        em.flush();
     }
 }
