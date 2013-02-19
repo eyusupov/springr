@@ -1,4 +1,4 @@
-<%@page trimDirectiveWhitespaces="true"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ include file="/WEB-INF/jsp/include.jsp" %>
 <s:url var = "style" value='/static/style.css' />
 <s:url var = "action" value='/add' />
@@ -24,9 +24,16 @@
       </dl>
     </form:form>
     <ul class="entries">
-    <c:forEach items="${entries}" var="entry">
+    <c:choose>
+      <c:when test="${empty entries}">
+      <li><em>Unbelievable. No entries here so far</em>
+      </c:when>
+      <c:otherwise>
+        <c:forEach items="${entries}" var="entry">
       <li><h2><c:out value="${entry.title}"/></h2><c:out value="${entry.text}"/>
-    </c:forEach>
+        </c:forEach>
+      </c:otherwise>
+    </c:choose>
     </ul>
   </div>
 </html>

@@ -18,8 +18,8 @@ import javax.validation.constraints.NotNull;
  */
 @Entity
 public class Entry implements Serializable {
-    // TODO
-    private static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = -7508780583828296963L;
+    
     @NotNull
     private String title;
     @NotNull
