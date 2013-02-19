@@ -36,6 +36,11 @@ public class BlogController {
     public String showEntries(Model model) {
         model.addAttribute(new Entry());
         model.addAttribute("entries", entryManager.getEntries());
-        return "entries";
+        return "show_entries";
+    }
+    
+    @RequestMapping("/login")
+    public String login() {
+        return "login";
     }
 }
