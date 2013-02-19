@@ -4,7 +4,7 @@
   <head><title><fmt:message key="title"/></title></head>
   <body>
     <h1><fmt:message key="heading"/></h1>
-    <s:url var = "action" value='/addEntry' />
+    <s:url var = "action" value='/add' />
     <form:form method="post" modelAttribute="entry" action="${action}">
         <dl>
             <dt>Title:
