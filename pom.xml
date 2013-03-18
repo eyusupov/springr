@@ -187,6 +187,13 @@
             <version>1.0.1</version>
         </dependency>
 
+        <!-- Jackson -->
+        <dependency>
+            <groupId>org.codehaus.jackson</groupId>
+            <artifactId>jackson-mapper-asl</artifactId>
+            <version>1.9.12</version>
+        </dependency>
+
         <!-- J2EE -->
         <dependency>
             <groupId>javax</groupId>
